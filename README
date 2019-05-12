@@ -1,0 +1,8 @@
+A package of flask app
+
+function: get api for user->key
+application framework:Flask
+Backend TCP load balancer:Nginx reverse proxy
+Deployed on multiple docker container.
+
+
