@@ -40,10 +40,10 @@ Envrionment Setup (VM-UBUNTU 18.04)
 * sudo systemctl status docker
 ***
 ## Flask App 
-##### Created flask app ```[app.py](../application/app.py)``` with using dictionary to check whether user present or not. If not then key error 400.
-##### Created requirement file Created [requirements.txt](../application/requirements.txt)for packages needed by python to execute.
+##### Created flask app ```[app.py](./application/app.py)``` with using dictionary to check whether user present or not. If not then key error 400.
+##### Created requirement file Created [requirements.txt](./application/requirements.txt)for packages needed by python to execute.
 ##### Created Dockerfile [Dockerfile](../application/Dockerfile)
 ***
 ## Nginx configuration
-##### Created Dockerfile [Dockerfile](../nginx-docker/Dockerfile)
-##### Created configuration file for nginx [nginx.conf](../nginx-docker/nginx.conf)
+##### Created Dockerfile [Dockerfile](./nginx-docker/Dockerfile)
+##### Created configuration file for nginx [nginx.conf](./nginx-docker/nginx.conf)
