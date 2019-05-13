@@ -18,11 +18,10 @@ open browser and use localhost:5000/user?user="xxx"   x-->refers to value of use
 #### Expected output: response from port 500x key for user: xxx
 ***
 
----
 # A package of flask app
 
-... ###### function: get api for user->key
-... ###### application framework:Flask
+... ###### function: get api for user->key 
+-- application framework:Flask
 ... ###### Backend TCP load balancer:Nginx reverse proxy
 ... ###### Deployed on multiple docker container.
 
