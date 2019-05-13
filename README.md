@@ -11,11 +11,11 @@
 ##### ..* build docker conatiner using this command sudo docker build -t nginx-docker .
 ##### ..* After Successful build to run docker container - sudo docker run -p 5000:80 -d nginx-docker
 ###### check dockercontainer status using command sudo docker ps
-
+***
 open browser and use localhost:5000/user?user="xxx"   x-->refers to value of user
-
+***
 #### Expected output: response from port 500x key for user: xxx
-
+***
 
 
 A package of flask app
@@ -25,7 +25,7 @@ application framework:Flask
 Backend TCP load balancer:Nginx reverse proxy
 Deployed on multiple docker container.
 
-
+***
 Envrionment Setup (VM-UBUNTU 18.04)
 ..* sudo apt update
 ..* apt install python3-pip
@@ -38,12 +38,12 @@ Envrionment Setup (VM-UBUNTU 18.04)
 ..* sudo apt update
 ..* sudo apt install docker-ce
 ..* sudo systemctl status docker
-
+***
 ## Flask App 
 ##### Created flask app ```[app.py](../application/app.py)``` with using dictionary to check whether user present or not. If not then key error 400.
 ##### Created requirement file Created [requirements.txt](../application/requirements.txt)for packages needed by python to execute.
 ##### Created Dockerfile [Dockerfile](../application/Dockerfile)
-
+***
 ## Nginx configuration
 ##### Created Dockerfile [Dockerfile](../nginx-docker/Dockerfile)
 ##### Created configuration file for nginx [nginx.conf](../nginx-docker/nginx.conf)
