@@ -2,7 +2,7 @@
 
 ###### Prerequsite: 
 * need docker CE
-#####  clone this repo on your PC
+* #####  clone this repo on your PC
 #####  select application folder inside this repo
 #####  build docker container using this command sudo docker build -t flask_app .
 #####  After Successful build to run docker container - sudo docker run -e "MESSAGE=port 500x" -p 500x:5000 -d flask_app
