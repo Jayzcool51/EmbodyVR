@@ -1,5 +1,6 @@
 # Steps to run this application
-
+***
+### with building steps
 ###### Prerequsite: 
 * need docker CE
 ---
@@ -13,7 +14,19 @@
 * #####  After Successful build to run docker container - sudo docker run -p 5000:80 -d nginx-docker
 * ###### check dockercontainer status using command sudo docker ps
 ***
-open browser and use localhost:5000/user?user="xxx"   x-->refers to value of user 
+### Using Docker Hub
+* #### pull docker form repo jayzcool51 using following command:
+* ###### docker pull jayzcool51/flask-app
+* ###### docker pull jayzcool51/nginx-docker
+* ###### docker run -e "MESSAGE=port 500x" -p 500x:5000 -d jayzcool51/nginx-docker
+* #####  run this above command for 3 times with different port (500x) where x is variable x=1,x=2,x=3.
+* #####  After Successful build to run docker container - docker run -p 5000:80 -d jayzcool51/nginx-docker
+* ###### check dockercontainer status using command docker ps
+* ###### check log status using command docker logs <Container-ID>  "obtain from docker ps"
+
+
+***
+open browser and use localhost:http://192.168.99.100/user?user="xxx"   x-->refers to value of user 
 values in dictionary {"abc":123,"man":"mankey","dog":"dogkey","cat":"catkey"}.
 ***
 #### Expected output: response from port 500x key for user: key-value 
