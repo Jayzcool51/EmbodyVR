@@ -7,7 +7,7 @@ users={"abc":123,"man":"mankey","dog":"dogkey","cat":"catkey"}
 def user():
 	try:
 		user=request.args.get('user')
-		return "response from "+str(os.environ['MESSAGE'])+" key for given user:"+str(user) 
+		return "response from "+str(os.environ['MESSAGE'])+" key for given user:"+str(users[user]) 
 	except Exception as e:
 		return "400 Key Error"+str(e)
 if __name__ == "__main__":
