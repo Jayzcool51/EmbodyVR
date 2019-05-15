@@ -29,7 +29,7 @@
 open browser and use localhost:http://192.168.99.100/user?user="xxx"   x-->refers to value of user 
 values in dictionary {"abc":123,"man":"mankey","dog":"dogkey","cat":"catkey"}.
 ***
-#### Expected output: response from port 500x key for user: key-value 
+#### Expected output: response from port 500x key for given user: key-value 
 ***
 
 # A package of flask app
