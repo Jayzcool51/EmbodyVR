@@ -11,4 +11,4 @@ def user():
 	except Exception as e:
 		return "400 Key Error"+str(e)
 if __name__ == "__main__":
-    app.run(port=5000,host='0.0.0.0',debug=True)
+    app.run(port=5000,host='0.0.0.0')
