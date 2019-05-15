@@ -26,19 +26,6 @@ values in dictionary {"abc":123,"man":"mankey","dog":"dogkey","cat":"catkey"}.
  ###### Backend TCP load balancer:Nginx reverse proxy  
  ###### Deployed on multiple docker container.  
 ***
-Envrionment Setup (VM-UBUNTU 18.04)
-* sudo apt update
-* apt install python3-pip
-* pip3 install wheel
-* pip3 install flask uwsgi
-* sudo apt update
-* sudo apt install apt-transport-https ca-certificates curl software-properties-common
-* curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-* sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-* sudo apt update
-* sudo apt install docker-ce
-* sudo systemctl status docker
-***
 ## Flask App 
 ##### Created flask app ```[app.py](./application/app.py)``` with using dictionary to check whether user present or not. If not then key error 400.
 ##### Created requirement file Created [requirements.txt](./application/requirements.txt)for packages needed by python to execute.
