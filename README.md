@@ -5,6 +5,9 @@
 * need docker CE
 ---
 * #####  clone this repo on your PC
+* #####  select mysql-docker folder inside this repo
+* #####  build docker container using this command sudo docker build -t mysql-test .
+* #####  After Successful build to run docker container - sudo docker run -d -e MYSQL_ROOT_PASSWORD=supersecret -p 3306:3306 mysql-test
 * #####  select application folder inside this repo
 * #####  build docker container using this command sudo docker build -t flask_app .
 * #####  After Successful build to run docker container - sudo docker run -e "MESSAGE=port 500x" -p 500x:5000 -d flask_app
@@ -18,6 +21,8 @@
 * #### pull docker form repo jayzcool51 using following command:
 * ###### docker pull jayzcool51/flask-app
 * ###### docker pull jayzcool51/nginx-docker
+* ###### docker pull jayzcool51/mysql-docker
+* ######  After Successful build to run docker container: docker run -d -e MYSQL_ROOT_PASSWORD=supersecret -p 3306:3306 jayzcool51/mysql-docker
 * ###### docker run -e "MESSAGE=port 500x" -p 500x:5000 -d jayzcool51/nginx-docker
 * #####  run this above command for 3 times with different port (500x) where x is variable x=1,x=2,x=3.
 * #####  After Successful build to run docker container - docker run -p 5000:80 -d jayzcool51/nginx-docker
