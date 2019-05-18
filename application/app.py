@@ -8,7 +8,7 @@ app = Flask(__name__)
 ##                                 host='localhost',
 ##                                 database='embodyvr')
 
-@app.route('/users',methods=['GET'])
+@app.route('/user',methods=['GET'])
 def user():
     try:
       conn = mysql.connect(host = "172.17.0.1",user = "root",password = "supersecret",database="embodyvr",port=3306)
